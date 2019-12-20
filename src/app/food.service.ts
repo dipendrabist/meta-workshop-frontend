@@ -12,8 +12,8 @@ private baseUrl = 'http://localhost:8086/v1/food';
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
-  createFood(food: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, food);
+  createFood(foods: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}`, foods);
   }
 
   updateFood(id: number, value: any): Observable<Object> {
